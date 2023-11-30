@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by TestWinApi.rc
+//
+#define HLST_EVENTOS                    0x807103eb    // DLG_EVENTOS [Spanish (Mexico)]

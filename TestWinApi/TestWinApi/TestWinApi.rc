@@ -1,0 +1,304 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexico) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_DOCTORES DIALOGEX 0, 0, 347, 208
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mi Perfil"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Guardar",BTN_GUARDAR,135,187,50,14
+    EDITTEXT        TXT_NOMBRE,80,119,151,13,ES_AUTOHSCROLL
+    EDITTEXT        TXT_USUARIO,87,135,56,13,ES_AUTOHSCROLL
+    EDITTEXT        TXT_PASSWORD,87,154,55,13,ES_AUTOHSCROLL
+    EDITTEXT        TXT_CEDULA,87,170,56,13,ES_AUTOHSCROLL
+    LTEXT           "Nombre:",IDC_STATIC,16,119,55,12
+    LTEXT           "Nombre de usuario:",IDC_STATIC,16,138,66,12
+    LTEXT           "Contraseña:",IDC_STATIC,16,154,55,12
+    LTEXT           "Edad:",IDC_STATIC,17,172,55,12
+    LISTBOX         LST_DOCTORES,7,7,224,90,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Borrar",BTN_BORRAR,187,187,54,14
+    PUSHBUTTON      "Nuevo Perfil",BTN_NUEVO,171,99,61,14
+    CONTROL         "",PCT_FOTO,"Static",SS_BITMAP,246,7,15,13
+    PUSHBUTTON      "Cargar Foto",BTN_CARGARFOTO,258,99,71,14
+    EDITTEXT        TXT_RUTAFOTO,236,119,104,14,ES_AUTOHSCROLL
+END
+
+DLG_CITAS DIALOGEX 0, 0, 417, 292
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Comprar tickets"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Guardar",BTN_GUARDAR_CITA,297,250,50,15
+    PUSHBUTTON      "Cancelar",BTN_SALIR_CITAS,360,271,50,14
+    LISTBOX         LST_MASCOTAS,7,53,192,194,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        TXT_NOMBRE_CLIENTE,218,42,124,12,ES_AUTOHSCROLL
+    EDITTEXT        TXT_TELEFONO,217,69,124,13,ES_AUTOHSCROLL
+    EDITTEXT        TXT_MASCOTA,219,124,162,13,ES_AUTOHSCROLL
+    COMBOBOX        CMB_ESTATUS,219,203,95,47,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Hora de la funcion:",LBL_HORA,217,8,68,8
+    LTEXT           "Nombre del comprador:",LBL_NOMBRE_CLIENTE,217,32,86,8
+    LTEXT           "Telefono:",LBL_TELEFONO,216,58,84,10
+    LTEXT           "Cantidad de tickets:",LBL_ESPECIE,218,87,66,8
+    LTEXT           "Nombre del evento:",LBL_MASCOTA,218,114,78,10
+    LTEXT           "Precio de los tickets:",LBL_COSTO,218,142,73,9
+    LTEXT           "Estatus de compra:",LBL_ESTATUS,219,193,95,9
+    EDITTEXT        TXT_DOCTOR,219,231,128,14,ES_AUTOHSCROLL
+    LTEXT           "Perfil Actual:",LBL_DOCTOR,220,220,83,9
+    PUSHBUTTON      "Perfiles",BTN_DOCTORES_CITAS,7,270,68,15
+    PUSHBUTTON      "Nueva Compra",BTN_NUEVO_CITA,127,250,73,14
+    LTEXT           "Fecha del evento:",LBL_FECHA,7,8,90,8
+    CONTROL         "",DTP_FECHA,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,7,17,114,13
+    PUSHBUTTON      "Borrar Compra",BTN_BORRAR_CITA,7,249,69,15
+    PUSHBUTTON      "Ver Compras",BTN_VER_CITAS,126,17,73,14
+    CONTROL         "",DTP_HORA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,215,18,72,11
+    LTEXT           "Mis Compras:",LBL_FECHA2,7,41,90,8
+    LTEXT           "Precio total:",LBL_COSTO2,218,167,47,9
+    LTEXT           "¿Agregar descuento?",LBL_COSTO3,318,146,72,9
+    PUSHBUTTON      "2x1",IDC_DESCUENTO21,330,163,50,14
+    PUSHBUTTON      "10%",IDC_DESCUENTO10,330,181,50,14
+    EDITTEXT        CMB_ESPECIE,219,97,64,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Custom1",TXT_COSTO,"",WS_TABSTOP,220,151,66,14
+    CONTROL         "Custom2",TXT_COSTO2,"",WS_TABSTOP,219,177,68,14
+END
+
+DLG_EVENTOS DIALOGEX 0, 0, 354, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE
+CAPTION "Eventos Disponibles"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Regresar al Menu",IDOK,263,151,69,14
+    COMBOBOX        CMB_EVENTOS,25,25,304,123,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Solo vista",IDC_STATIC,139,12,32,8
+    PUSHBUTTON      "Seleccionar",IDC_SELECCION,207,151,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    DLG_DOCTORES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+
+    DLG_CITAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 410
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+    END
+
+    DLG_EVENTOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+DLG_DOCTORES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+DLG_CITAS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+DLG_EVENTOS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Spanish (Mexico) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Spain, International Sort) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_MENU DIALOGEX 0, 0, 177, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Menu"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Eventos del mes",BTN_EVENTOS,50,26,76,22
+    PUSHBUTTON      "Compra de tickets",BTN_CITAS,50,61,76,22
+    PUSHBUTTON      "Mis Compras",BTN_SALIR,50,96,76,22
+    LTEXT           "Estático",LBL_NOMBRE_MENU,9,131,151,8
+END
+
+DLG_LOGIN DIALOGEX 0, 0, 127, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",BTN_ACEPTAR_LOGIN,14,67,50,14
+    PUSHBUTTON      "Cancelar",BTN_CANCELAR_LOGIN,65,67,50,14
+    EDITTEXT        TXT_USUARIO_LOGIN,13,23,101,12,ES_AUTOHSCROLL
+    EDITTEXT        TXT_PASS_LOGIN,14,47,100,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Usuario:",LBL_USUARIO_LOGIN,14,13,62,9
+    LTEXT           "Password:",LBL_PASS_LOGIN,14,36,62,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    DLG_MENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    DLG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+DLG_MENU AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+DLG_LOGIN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MNU_PRINCIPAL MENU
+BEGIN
+    POPUP "Catalogos"
+    BEGIN
+        MENUITEM "Doctores",                    ID_CATALOGOS_DOCTORES
+        MENUITEM "Mascotas",                    ID_CATALOGOS_MASCOTAS
+        MENUITEM "Salir",                       ID_CATALOGOS_SALIR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+#endif    // Spanish (Spain, International Sort) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
